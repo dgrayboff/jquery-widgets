@@ -16,6 +16,6 @@ $('textarea').keyup(function () {
     var charLength = $('textarea').val().length;
     $('textarea').val($('textarea').val().substring(0, maxchars));
     var charLength = $('textarea').val().length;
-    remain = maxchars - parseInt(charLength);
+    remain = maxchars - charLength;
     $('#remain').text(remain);
 });
